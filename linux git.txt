@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Check if a city name is provided if [ -z "$1" ]; then
+echo "Usage: $0 <city>" exit 1
+fi
+
+# Set the city name CITY=$1
+echo "Fetching weather for $CITY..."
+
+# Fetch and display weather using wttr.in curl -s "wttr.in/$CITY?format=3"
+
+# Optional: Display a suggestion for more detailed information echo "For more detailed information, run:"
+echo "curl wttr.in/$CITY" 
